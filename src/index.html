@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="hero__card">
+                <img class="hero__logo" src="./images/convite.webp" alt="">
+                <p class="hero__text">
+                    CONTAGEM REGRESSIVA: <span id="contador"></span>
+                </p>
+                <div class="infos">
+                    <ul class="infos__lista">
+                        <li class="infos__lista__item">
+                            <b>LOCALIZAÇÃO:</b>
+                            Florianopolis - SC
+                        </li>
+                        <li class="infos__lista__item"> 
+                            <b>DIA e HORARIO:</b>
+                            16/08/2025 às 17:00hr
+                        </li>
+                        <a href="#" class="button button--primary">
+                            CONFIRMAR PRESENÇA
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--aniversario">
+        <div class="container" data-aos="zoom-in">
+            <div class="event__details">
+                <h2 class="event__details__title">Meu aniversário</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga porro laborum ea. Earum reprehenderit dolores atque tempore ad at quasi, accusantium fugit rem quidem obcaecati, consectetur animi suscipit amet!
+                </p>
+            </div>
+            <img class="event__image" src="./images/festa.webp" alt="">
+        </div>
+    </section>
+    <section class="event event--localizacao event--image-left">
+        <div class="container" data-aos="zoom-in">
+            <div class="event__details">
+                <h2 class="event__details__title">Localização</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga porro laborum ea. Earum reprehenderit dolores atque tempore ad at quasi, accusantium fugit rem quidem obcaecati, consectetur animi suscipit amet!
+                </p>
+            </div>
+            <img class="event__image" src="./images/praia-do-pantano-do-sul-floripa.webp" alt="">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

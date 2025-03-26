@@ -1,0 +1,57 @@
+@use "../variaveis";
+
+.infos{
+    padding: 16px 24px;
+    background-color: variaveis.$corFundoInfo;
+    border-radius: 12px;
+
+    &__lista{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+
+        &__item{
+            font-size: 14px;
+            color: variaveis.$corText;
+
+            b{
+                color: variaveis.$corText;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 640px){
+    
+        &__lista{
+            display: block;
+
+            &__item{
+                padding-bottom: 20px;
+                font-size: 24px;
+
+                b{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px){
+        .infos{
+            &__lista{
+                display: block;
+    
+                &__item{
+                    font-size: 30px;
+                    padding-bottom: 20px;
+    
+                    b{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

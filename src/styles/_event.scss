@@ -1,0 +1,82 @@
+@use "variaveis";
+
+.event{
+    padding: 80px 0;
+    
+    &--aniversario{
+        background-image: linear-gradient( #efb680, #ff5733);
+    }
+
+    &--localizacao{
+        background-image: linear-gradient( #ff5733, #efb680);
+    }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__image{
+        max-width: 360px;
+        border-radius: 12px;
+        border: 2px solid variaveis.$corFundo;
+    }
+
+    &__details{
+
+        border: 2px solid;
+        border-radius: 12px;
+        color: variaveis.$corText;
+        padding: 30px;
+        line-height: 28px;
+
+        &__title{
+            font-size: 24px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+    }
+
+    @media(max-width: 640px){
+        .container{
+            display: block;
+        }
+
+        &__image{
+            width: 100%;
+        }
+
+        &__details{
+            &__title{
+                padding-bottom: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px){
+        .container{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__details{
+            &__title{
+                font-size: 40px;
+                padding-bottom: 30px;
+            }
+
+            &__description{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+}
